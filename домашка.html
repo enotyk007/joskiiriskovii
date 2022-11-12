@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		body{
+			background-image: url('img/fon2.png');
+			background-size: 100%;
+		}
+		img{
+			position: relative;
+			animation: mymove 8s;
+			display: block;
+		}
+		@keyframes mymove {
+			from {left: 0px;}
+			to {left:950px;}
+		}
+		#img1 {animation-timing-function: ease}
+		#img2 {animation-timing-function: linear}
+	</style>
+</head>
+<body>
+	<img src="img/fly.png" id="img1" style="left: 0px; top: 5px;">
+	<img src="img/car.png" id="img2" style="left: 0px; top: 400px;">
+</body>
+</html>

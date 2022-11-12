@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<p>это Сайтама</p>
+	<style>
+		body{
+			background-image: url('img/fon.jpg');
+			background-size: 100%;
+		}
+		img{
+			position: relative;
+			animation: mymove 0.0001s infinite;
+			display: block;
+		}
+		@keyframes mymove {
+			from {left: 0px;}
+			to {left:950px;}
+		}
+		#img1 {animation-timing-function: ease}
+		#img2 {animation-timing-function: linear}
+
+	</style>
+</head>
+<body>
+	<img src="img/hero.png" id="img2" style="left: 0px; top: 1px;">
+</body>
+</html>
